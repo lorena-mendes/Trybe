@@ -1,0 +1,47 @@
+body {
+  display: block;
+}
+nav {
+  border: 4px solid red;
+}
+section {
+  border: 4px solid red;
+}
+aside {
+  border: 4px solid red;
+}
+footer {
+  border: 4px solid red;
+}
+main {
+  border: 4px solid red;
+  display: inline-block;
+}
+
+#cabecalho {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  background-color: darkblue;
+  font-family:'Courgette', cursive;;
+}
+
+#nav ul li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+article {
+  color: darkblue;
+  border: 4px solid red;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-size: 40px;
+}
+#img-stomatopoda {
+  width: 280px;
+  float: right;
+}

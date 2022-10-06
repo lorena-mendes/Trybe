@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: #a6988a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 0;
+  min-width: 25%;
+  margin: 20px 80px;
+  border: 3px #1c0b2b solid;
+  border-radius: 40px;
+}
+
+.pokemon:hover {
+  webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.App {
+  text-align: center;
+}

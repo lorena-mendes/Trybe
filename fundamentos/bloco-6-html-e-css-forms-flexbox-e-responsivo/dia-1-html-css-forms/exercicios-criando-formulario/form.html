@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fomulário</title>
+</head>
+
+<body>
+  <h1>FORMULÁRIO</h1>
+  <form action="" method="get" id="form">
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+      <br>
+      <label for="input-name">Nome completo:</label>
+      <input type="text" name="nome" id="input-name" placeholder="Digite seu nome completo" minlength="10"
+        maxlength="40" required>
+      <br>
+      <br>
+      <label for="input-mail">E-mail:</label>
+      <input type="email" name="email" id="input-mail" placeholder="Digite seu e-mail" minlength="10" maxlength="50"
+        required>
+      <br>
+      <br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <p>Destino preferido:</p>
+      <input type="radio" id="option1" className="radios" value="Cidade" name="option" required>
+      <label for="option1">Cidade</label>
+      <input type="radio" id="option2" className="radios" value="Campo" name="option" required>
+      <label for="option2">Campo</label>
+      <input type="radio" id="option3" className="radios" value="Praia" name="option" required>
+      <label for="option3"> Praia</label>
+      <input type="radio" id="option4" className="radios" value="Montanhas" name="option" required>
+      <label for="option4">Montanhas</label>
+      <br>
+      <br>
+      <label for="texto">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+      <br>
+      <br>
+      <textarea type="text" name="texto" id="texto" cols="60" rows="10" placeholder="Digite sua resposta aqui"
+        maxlength="500" style="resize:none"></textarea>
+      <br>
+      <br>
+      <label for="date"> Qual a melhor data para realizar sua viagem?</label>
+      <input type="date" id="date" value="" name="date">
+      <br>
+      <br>
+      <label for="oport">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      <input type="checkbox" id="oport" name="oport">
+      <br>
+      <br>
+      <label for="agree">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos
+        futuros.</label>
+      <input type="checkbox" name="agree" id="agree" required>
+      <br>
+      <br>
+    </fieldset>
+    <br>
+    <button type="submit" id="submit" value="">Enviar informações</button>
+    <button type="reset">Apagar informações</button>
+
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>

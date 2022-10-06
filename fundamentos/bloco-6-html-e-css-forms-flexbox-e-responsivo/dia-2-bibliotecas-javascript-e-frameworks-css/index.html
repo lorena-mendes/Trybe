@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fomulário</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <script src="dist/js/DatePickerX.min.js"></script>
+</head>
+<body>
+  <h1>FORMULÁRIO</h1>
+
+  <form action="" method="get" id="form" class="js-form">
+    <fieldset class="form-group">
+      <label class="form-label" for="input-name">Nome completo:</label>
+      <input class="form-control" type="text" name="nome" id="input-name" placeholder="Digite seu nome completo" minlength="10"
+        maxlength="40" required>
+      <br>
+
+      <label class="form-label" for="input-mail">E-mail:</label>
+      <input class="form-control" type="email" name="email" id="input-mail" placeholder="Digite seu e-mail" minlength="10" maxlength="50"
+        required>
+      <br>
+      
+      <p>Destino preferido:</p>
+      <input type="radio" id="option1" className="radios" value="Cidade" name="option" required>
+      <label class="form-label" for="option1">Cidade</label>
+
+      <input type="radio" id="option2" className="radios" value="Campo" name="option" required>
+      <label class="form-label" for="option2">Campo</label>
+
+      <input type="radio" id="option3" className="radios" value="Praia" name="option" required>
+      <label class="form-label" for="option3"> Praia</label>
+      
+      <input type="radio" id="option4" className="radios" value="Montanhas" name="option" required>
+      <label class="form-label" for="option4">Montanhas</label>
+      <br>
+
+      <label class="form-label" for="texto">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+      <br>
+      <textarea class="form-control" type="text" name="texto" id="texto" cols="60" rows="10" placeholder="Digite sua resposta aqui"
+        maxlength="500" style="resize:none"></textarea>
+      <br>
+
+      <label class="form-label" for="date"> Qual a melhor data para realizar sua viagem?</label>
+      <input class="form-control" type="date" id="date" value="" name="date">
+      <br>
+
+      <label class="form-label" for="oport">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.</label>
+      <input class="" type="checkbox" id="oport" name="oport">
+      <br>
+
+      <label class="form-label" for="agree">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos
+        futuros.</label>
+      <input class="" type="checkbox" name="agree" id="agree" required>
+      <br>
+    </fieldset>
+
+    <button class="btn btn-primary submit-button" type="submit" id="submit" value="">Enviar informações</button>
+    <button class="btn btn-danger clear-button" type="reset">Apagar informações</button>
+
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>

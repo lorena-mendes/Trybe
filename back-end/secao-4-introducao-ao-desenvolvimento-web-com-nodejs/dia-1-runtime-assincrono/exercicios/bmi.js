@@ -12,7 +12,7 @@ function handleBmi(weight, height) {
 }
 
 function main() {
-    const weightKg = readline.question('Qual seu peso?');
+    const weightKg = readline.questionFloat('Qual seu peso?');
     const heightCm = readline.question('Qual sua altura?');
     const bmi = handleBmi(weightKg, heightCm);
     console.log(`BMI: ${bmi.toFixed(2)}`);

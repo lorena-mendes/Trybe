@@ -31,5 +31,5 @@ const getChocolateById = async (id) => {
 module.exports = {
     getAllChocolates,
     getChocolateById,
-  getChocolatesByBrand,
+    getChocolatesByBrand,
 };

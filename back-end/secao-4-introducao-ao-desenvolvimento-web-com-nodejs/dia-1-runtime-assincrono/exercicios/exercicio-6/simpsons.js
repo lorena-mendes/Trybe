@@ -18,9 +18,17 @@ async function getSimpsonByID(id) {
   return idSimpson
 }
 
+async function deletetSimpsonByID() {
+  const fileContent = await fs.readFile('./simpsons.json', 'utf-8') 
+  const simpsons = JSON.parse(fileContent);
+  const newArray = simpsons.filter((simpson) => Number(simpson.id) !== 10 && Number(simpson.id) !== 6);
+  await fs.writeFile('./simpsons.json', JSON.stringify(newArray));
+}
+
 function main() {
   // readAll();
-  getSimpsonByID(1).then((simpson) => console.log(simpson));
+  // getSimpsonByID(1).then((simpson) => console.log(simpson));
+  deletetSimpsonByID();
 }
 
 main();

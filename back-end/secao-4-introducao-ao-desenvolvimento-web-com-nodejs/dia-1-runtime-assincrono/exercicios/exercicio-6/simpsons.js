@@ -25,10 +25,20 @@ async function deletetSimpsonByID() {
   await fs.writeFile('./simpsons.json', JSON.stringify(newArray));
 }
 
+async function createSimpsonsFamily() {
+  const fileContent = await fs.readFile('./simpsons.json', 'utf-8') 
+  const simpsons = JSON.parse(fileContent);
+  const family = [1,2,3,4];
+  const simpsonsFamily = simpsons
+    .filter((simpson) => family.includes(Number(simpson.id)));
+  await fs.writeFile('./simpsonsFamily.json', JSON.stringify(simpsonsFamily));
+}
+
 function main() {
   // readAll();
   // getSimpsonByID(1).then((simpson) => console.log(simpson));
-  deletetSimpsonByID();
+  // deletetSimpsonByID();
+  createSimpsonsFamily();
 }
 
 main();

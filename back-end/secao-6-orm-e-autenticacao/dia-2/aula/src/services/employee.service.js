@@ -13,9 +13,9 @@ const getById = async (id) => {
   const employee = await Employee.findOne({
       where: { id },
       // include: [{ model: Address, as: 'addresses' }], com o número aparecendo 
-      include: [{
-        model: Address, as: 'addresses', attributes: { exclude: ['number'] }, //sem aparecer o número
-      }],
+      // include: [{
+      //   model: Address, as: 'addresses', attributes: { exclude: ['number'] }, //sem aparecer o número
+      // }],
     });
   return employee;
 }

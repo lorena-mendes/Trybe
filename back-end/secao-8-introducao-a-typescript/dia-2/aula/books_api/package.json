@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/server.js",
   "devDependencies": {
+    "@types/node": "18.11",
     "nodemon": "2.0.15"
   },
   "scripts": {
@@ -15,8 +16,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/readline-sync": "1.4",
     "dotenv": "10.0",
     "express": "4.17.1",
-    "mysql2": "2.3"
+    "mysql2": "2.3",
+    "readline-sync": "1.4"
   }
 }

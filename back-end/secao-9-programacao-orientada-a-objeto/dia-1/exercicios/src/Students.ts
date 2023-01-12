@@ -50,14 +50,37 @@ class Student {
       this._workNotes = newValue;
     }
   }
+
+  sumNotes(): number {
+    return [...this.workNotes, ...this.testsResults]
+    .reduce((previousNote, note) => {
+      note += previousNote;
+      return note;
+    }, 0);
+  }
+
+  averageNote(): number {
+    const sumNotes = this.sumNotes();
+    const divider = this.workNotes.length + this.testsResults.length;
+
+    return Math.round(sumNotes / divider);
+  }
 }
 
 //Teste
 
 const student1 = new Student('123456', 'Lorena Mendes', [5,6,8,15], [8,10]);
 console.log(student1);
+console.log('Soma das notas: ', student1.sumNotes());
+console.log('Média das notas: ', student1.averageNote());
+
+
 
 const student2 = new Student('185796', 'Rafael Souto', [3,8,20,1], [16,15]);
 console.log(student2);
+console.log('Soma das notas: ', student2.sumNotes());
+console.log('Média das notas: ', student2.averageNote());
+
+
 
 
